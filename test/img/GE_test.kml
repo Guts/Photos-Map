@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>My Picasa Pictures</name>
+	<open>1</open>
+	<Style id="picasaDisplayHighlight_c84243aa4fbf2ed7">
+		<IconStyle>
+			<scale>2</scale>
+			<Icon>
+				<href>image0_roll.jpg</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<Style id="picasaDisplayNormal_c84243aa4fbf2ed7">
+		<IconStyle>
+			<Icon>
+				<href>image0_roll.jpg</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="picasaDisplayStyleMap_b695c4e56fc0ed92">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#picasaDisplayNormal_b695c4e56fc0ed92</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#picasaDisplayHighlight_b695c4e56fc0ed92</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="picasaDisplayNormal_9b716a5200be3a53">
+		<IconStyle>
+			<Icon>
+				<href>image3_roll.jpg</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<Style id="picasaDisplayHighlight_b695c4e56fc0ed92">
+		<IconStyle>
+			<scale>2</scale>
+			<Icon>
+				<href>image2_roll.jpg</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<Style id="picasaDisplayNormal_3238587f5792b842">
+		<IconStyle>
+			<Icon>
+				<href>image1_roll.jpg</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="picasaDisplayStyleMap_9b716a5200be3a53">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#picasaDisplayNormal_9b716a5200be3a53</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#picasaDisplayHighlight_9b716a5200be3a53</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="picasaDisplayStyleMap_3238587f5792b842">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#picasaDisplayNormal_3238587f5792b842</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#picasaDisplayHighlight_3238587f5792b842</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="picasaDisplayHighlight_3238587f5792b842">
+		<IconStyle>
+			<scale>2</scale>
+			<Icon>
+				<href>image1_roll.jpg</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="picasaDisplayStyleMap_c84243aa4fbf2ed7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#picasaDisplayNormal_c84243aa4fbf2ed7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#picasaDisplayHighlight_c84243aa4fbf2ed7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="picasaDisplayNormal_b695c4e56fc0ed92">
+		<IconStyle>
+			<Icon>
+				<href>image2_roll.jpg</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<Style id="picasaDisplayHighlight_9b716a5200be3a53">
+		<IconStyle>
+			<scale>2</scale>
+			<Icon>
+				<href>image3_roll.jpg</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<Folder>
+		<name>Picasa - vendredi 5 juillet 2013</name>
+		<open>1</open>
+		<Snippet maxLines="2">img</Snippet>
+		<description>Generated vendredi 5 juillet 20135:41:49</description>
+		<Placemark>
+			<name>Volcan</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<table width="400">          
+            <tr>
+              <td>
+                <img src="image0_thumb.jpg" width="400" height="300" >
+                <br />
+              </td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+              <td></td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+              <td>
+                <em>Date : 15/07/2009 11:31:00</em>
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+                <hr />
+                <a href="http://picasa.google.com/index.html"><img width="150" height="25" src="http://picasa.google.com/assets/logo_kmz.gif"></a>
+              </td>
+            </tr>
+          </table>]]></description>
+			<LookAt>
+				<longitude>55.697056</longitude>
+				<latitude>-21.276885</latitude>
+				<altitude>0</altitude>
+				<heading>0</heading>
+				<tilt>0</tilt>
+				<range>0.1</range>
+			</LookAt>
+			<styleUrl>#picasaDisplayStyleMap_c84243aa4fbf2ed7</styleUrl>
+			<Point>
+				<coordinates>55.697056,-21.276885,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PitonFougeres</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<table width="400">          
+            <tr>
+              <td>
+                <img src="image1_thumb.jpg" width="400" height="300" >
+                <br />
+              </td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+              <td></td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+              <td>
+                <em>Date : 12/12/2009 09:33:13</em>
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+                <hr />
+                <a href="http://picasa.google.com/index.html"><img width="150" height="25" src="http://picasa.google.com/assets/logo_kmz.gif"></a>
+              </td>
+            </tr>
+          </table>]]></description>
+			<LookAt>
+				<longitude>55.507506</longitude>
+				<latitude>-20.999051</latitude>
+				<altitude>0</altitude>
+				<heading>0</heading>
+				<tilt>0</tilt>
+				<range>0.1</range>
+			</LookAt>
+			<styleUrl>#picasaDisplayStyleMap_3238587f5792b842</styleUrl>
+			<Point>
+				<coordinates>55.507506,-20.999051,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Les 3 autres sont fin-prêts. On décollera en dernier.</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<table width="400">          
+            <tr>
+              <td>
+                <img src="image2_thumb.jpg" width="400" height="267" >
+                <br />
+              </td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+              <td>Les 3 autres sont fin-prêts. On décollera en dernier.</td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+              <td>
+                <em>Date : 26/08/2010 08:24:29</em>
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+                <hr />
+                <a href="http://picasa.google.com/index.html"><img width="150" height="25" src="http://picasa.google.com/assets/logo_kmz.gif"></a>
+              </td>
+            </tr>
+          </table>]]></description>
+			<LookAt>
+				<longitude>6.57837</longitude>
+				<latitude>45.838787</latitude>
+				<altitude>0</altitude>
+				<heading>0</heading>
+				<tilt>0</tilt>
+				<range>0.1</range>
+			</LookAt>
+			<styleUrl>#picasaDisplayStyleMap_b695c4e56fc0ed92</styleUrl>
+			<Point>
+				<coordinates>6.57837,45.838787,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Quelques précisions sur les légendes du coin : Le Chimborazo est un volcan mâle dont les amours avec le volcan Tungurahua sont célèbres. Ensemble ils auraient eu le Carihuairazo (à côté du Chimbo).</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<table width="400">          
+            <tr>
+              <td>
+                <img src="image3_thumb.jpg" width="400" height="226" >
+                <br />
+              </td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+              <td>Quelques précisions sur les légendes du coin : Le Chimborazo est un volcan mâle dont les amours avec le volcan Tungurahua sont célèbres. Ensemble ils auraient eu le Carihuairazo (à côté du Chimbo).</td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+              <td>
+                <em>Date : 12/01/2011 16:39:38</em>
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+                <hr />
+                <a href="http://picasa.google.com/index.html"><img width="150" height="25" src="http://picasa.google.com/assets/logo_kmz.gif"></a>
+              </td>
+            </tr>
+          </table>]]></description>
+			<LookAt>
+				<longitude>-78.771619</longitude>
+				<latitude>-1.608144</latitude>
+				<altitude>0</altitude>
+				<heading>0</heading>
+				<tilt>0</tilt>
+				<range>3463.99</range>
+			</LookAt>
+			<styleUrl>#picasaDisplayStyleMap_9b716a5200be3a53</styleUrl>
+			<Point>
+				<coordinates>-78.771619,-1.608144,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
