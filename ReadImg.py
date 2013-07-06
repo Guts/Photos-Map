@@ -82,8 +82,7 @@ def decimal_to_dms(decimal):
 
 
 tup_photos = li_photos(r'test/img')
-
-
+li_pts = []
 
 for photo in tup_photos:
     """ explore exif geotags of each photo """
@@ -127,9 +126,13 @@ for photo in tup_photos:
     print "avec pillow", coord_pillow
 
     # geojsonning
-    pt = geojson.Point([lat_value, lon_value])
+    li_pts.append(geojson.Point([lon_value, lat_value]))
 
-points = geojson.FeatureCollection(pt)
+points = geojson.GeometryCollection(li_pts)
+
+with open('photo_maps.geojson', 'w') as out_geojson:
+    geojson.dump(points, out_geojson)
+
 
 def main():
     pass
