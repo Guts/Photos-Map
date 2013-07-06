@@ -17,7 +17,7 @@
 # standard library
 from fractions import Fraction
 from os import path, walk
-from geojson import *
+import geojson
 
 # 3rd party libraries
 from PIL import Image
@@ -84,8 +84,10 @@ def decimal_to_dms(decimal):
 tup_photos = li_photos(r'test/img')
 
 
+
 for photo in tup_photos:
     """ explore exif geotags of each photo """
+    print '\n', path.basename(photo)
     # with EXIF (https://github.com/ianare/exif-py)
     with open(photo, 'r') as tof:
         tags = EXIF.process_file(tof)
@@ -108,10 +110,11 @@ for photo in tup_photos:
 
     lat_value = dms_to_decimal(*md.__getitem__("Exif.GPSInfo.GPSLatitude").value + [md.__getitem__("Exif.GPSInfo.GPSLatitudeRef").value])
     lon_value = dms_to_decimal(*md.__getitem__("Exif.GPSInfo.GPSLongitude").value + [md.__getitem__("Exif.GPSInfo.GPSLongitudeRef").value])
-
-    print "--- GPS ---"
+    alt_value = md.__getitem__("Exif.GPSInfo.GPSAltitude").value
+    print "\n\n--- GPS ---"
     print "Coordinates: " + lat + ", " + lon
     print "Coordinates: " + str(lat_value) + ", " + str(lon_value)
+    print "Altitude: " + str(alt_value)
     print "--- GPS ---"
     coord_pyexiv = (md['Exif.GPSInfo.GPSLatitude'].raw_value, md['Exif.GPSInfo.GPSLongitude'].raw_value, md['Exif.GPSInfo.GPSAltitude'].raw_value)
     # with pillow
@@ -119,11 +122,14 @@ for photo in tup_photos:
     coord_pillow = (keys.get('GPSInfo').get(2), keys.get('GPSInfo').get(4), keys.get('GPSInfo').get(6))
 
     # prints
-    print '\n', path.basename(photo)
     print "\navec pyEXIF", coord_EXIF
     print "avec pyexiv2", coord_pyexiv
     print "avec pillow", coord_pillow
 
+    # geojsonning
+    pt = geojson.Point([lat_value, lon_value])
+
+points = geojson.FeatureCollection(pt)
 
 def main():
     pass
