@@ -1,5 +1,6 @@
-#-*-coding: utf-8-*-
+﻿#-*-coding: utf-8-*-
 #!/usr/bin/env python
+from __future__ import unicode_literals
 #-------------------------------------------------------------------------------
 # Name:        module1
 # Purpose:
@@ -36,7 +37,7 @@ def li_photos(folder):
     photos = []
     for root, dirs, files in walk(folder):
         for i in files:
-            if path.splitext(path.join(root, i))[1] == u'.JPG':
+            if path.splitext(path.join(root, i))[1] == u'.JPG' or path.splitext(path.join(root, i))[1] == u'.JPEG':
                 photos.append(path.abspath(path.join(root, i)))
     # end of function
     return tuple(photos)
@@ -81,7 +82,7 @@ def decimal_to_dms(decimal):
 
 
 
-tup_photos = li_photos(r'test/img')
+tup_photos = li_photos(r'test\img')
 li_pts = []
 
 for photo in tup_photos:
