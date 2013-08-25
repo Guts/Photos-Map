@@ -2,26 +2,26 @@
     <head>
         <meta charset="utf-8">
         <title>Photos Map</title>
-        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.3/leaflet.css" />
         <!--[if lte IE 8]>
             <link rel="stylesheet" href="/http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" />
         <![endif]-->
         <script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
-		<script type="text/javascript" src="photo_maps.geojson.js"></script>
-		<script type="text/javascript">
-		function init() {
-		var map = L.map('map');
-		var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-		var osmAttrib='Donnéees OpenStreetMap';
-        var osm = new L.TileLayer(osmUrl, {minZoom: 2, maxZoom: 10, attribution: osmAttrib});
-		map.addLayer(osm);	
-		//var photos = {"type": "GeometryCollection", "geometries": [{"type": "Point", "coordinates": [-78.77161944444444, -1.6081444444444446]}, {"type": "Point", "coordinates": [6.57837009429526, 45.83878707885601]}, {"type": "Point", "coordinates": [55.507506370610024, -20.999050578456274]}, {"type": "Point", "coordinates": [55.69705582331069, -21.27688538233949]}]}
-		// add GeoJSON layer
-		//L.geoJson(photos).addTo(map);
-						}
-		</script> 
+<!-- 		<script type="text/javascript" src="photo_maps.geojson.js"></script> -->
+
     </head>
-	<body style="height:100%;" onload="init()"> 
-		<div style="width:100%; height:100%;" id="map"></div>
+	<body style="height:100%;"> 
+		<div style="width:100%; height:100%;" id="map">
+		<script type="text/javascript">
+		var map = new L.Map('map');
+
+		var base = new L.TileLayer('http://129.206.74.245:8001/tms_r.ashx?x={x}&y={y}&z={z}').addTo(map);
+
+		map.setView(new L.LatLng(10.66,38.58),03);
+		var photos = {"type": "GeometryCollection", "geometries": [{"type": "Point", "coordinates": [-78.77161944444444, -1.6081444444444446]}, {"type": "Point", "coordinates": [6.57837009429526, 45.83878707885601]}, {"type": "Point", "coordinates": [55.507506370610024, -20.999050578456274]}, {"type": "Point", "coordinates": [55.69705582331069, -21.27688538233949]}]}
+		//add GeoJSON layer
+		L.geoJson(photos).addTo(map);
+		</script>
+		</div>
 	</body>
 </html>
